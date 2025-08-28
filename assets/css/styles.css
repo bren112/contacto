@@ -11,14 +11,14 @@
   --hue-color: 190;
 
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 64%, 22%);
-  --first-color-second: hsl(var(--hue-color), 64%, 22%);
-  --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+  --first-color: rgb(223, 186, 0);
+  --first-color-second: rgb(47, 47, 47);
+  --first-color-alt: rgb(54, 54, 54);
   --title-color: hsl(var(--hue-color), 64%, 18%);
   --text-color: hsl(var(--hue-color), 24%, 35%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
-  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --body-color: rgb(255, 255, 255);
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
@@ -267,8 +267,8 @@ input {
 
 /* Change background header */
 .scroll-header {
-  background-color: var(--body-color);
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  background-color: rgb(46, 46, 46);
+  box-shadow: 0 0 4px rgba(51, 51, 51, 0.15);
 }
 
 .scroll-header .nav__logo,
