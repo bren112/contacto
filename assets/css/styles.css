@@ -14,7 +14,7 @@
   --first-color: rgb(223, 186, 0);
   --first-color-second: rgb(47, 47, 47);
   --first-color-alt: rgb(54, 54, 54);
-  --title-color: hsl(var(--hue-color), 64%, 18%);
+  --title-color: rgb(58, 58, 58);
   --text-color: hsl(var(--hue-color), 24%, 35%);
   --text-color-light: hsl(var(--hue-color), 8%, 60%);
   --input-color: hsl(var(--hue-color), 24%, 97%);
@@ -76,7 +76,7 @@ body.dark-theme {
   --title-color: hsl(var(--hue-color), 24%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 29%, 12%);
+  --body-color: black;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
@@ -324,10 +324,18 @@ input {
 }
 
 .home__data-title {
-  font-size: var(--biggest-font-size);
-  font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+  display: flex;
+  justify-content: start; /* centraliza */
+  align-items: center;
 }
+
+.home__data-title img {
+  width: 400px;
+  height: auto;
+}
+
+
 
 .home__social {
   display: flex;
