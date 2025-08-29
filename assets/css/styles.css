@@ -403,7 +403,7 @@ input {
 }
 
 .home__info {
-  background-color: var(--first-color);
+  /* background-color: var(--first-color); */
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1rem;
