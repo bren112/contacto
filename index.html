@@ -137,7 +137,8 @@
             
             <!--==================== DISCOVER ====================-->
             <section class="discover section" id="discover">
-                <h2 class="section__title">Venha nos<br> Conhecer!</h2>
+                <h2 class="section__title">Por que escolher<br> a Contacto?</h2>
+
                 
                 <div class="discover__container container swiper-container">
                     <div class="swiper-wrapper">
@@ -227,8 +228,21 @@
 
                 <!--==================== DISCOVER ====================-->
                 <section class="discover section" id="discover">
-                    <h2 class="section__title">Por que escolher<br> a Contacto?</h2>
-                    
+                    <h2 class="section__title">Nos Visite!</h2>
+                    <br>
+                    <br>
+                    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.123456789!2d-47.123456!3d-21.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b3abcd123456%3A0x1234567890abcdef!2sAvenida+7%2C+1480+-+Jardim+Teixeira%2C+SP+14620-318!5e0!3m2!1spt-BR!2sbr!4v1693180000000!5m2!1spt-BR!2sbr"
+                    width="400"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                  </iframe>
+                </div>
+                    <br>
+                    <br>
                     <div class="discover__container container swiper-container">
                         <div class="swiper-wrapper">
                             <!--==================== DISCOVER 1 ====================-->
@@ -267,22 +281,40 @@
             <!--==================== SUBSCRIBE ====================-->
             <section class="subscribe section">
                 <div class="subscribe__bg">
-                    <div class="subscribe__container container">
-                        <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
-                        <p class="subscribe__description">Subscribe to our newsletter and get a 
-                            special 30% discount.
-                        </p>
-    
-                        <form action="" class="subscribe__form">
-                            <input type="text" placeholder="Enter email" class="subscribe__input">
-    
-                            <button class="button">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
+                  <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">
+                      Fale com a Contacto no WhatsApp
+                    </h2>
+                    <p class="subscribe__description">
+                      Digite sua mensagem abaixo e fale direto conosco no WhatsApp 📲
+                    </p>
+              
+                    <form class="subscribe__form" onsubmit="sendToWhats(event)">
+                      <input 
+                        type="text" 
+                        id="whatsMessage" 
+                        placeholder="Digite sua mensagem" 
+                        class="subscribe__input"
+                        required
+                      >
+                      <button class="button" type="submit">
+                        Enviar
+                      </button>
+                    </form>
+                  </div>
                 </div>
-            </section>
+              </section>
+              
+              <script>
+                function sendToWhats(event) {
+                  event.preventDefault(); // evita recarregar a página
+                  const message = document.getElementById("whatsMessage").value;
+                  const phone = "5516981424260"; // número no formato internacional (55 = Brasil, 16 = DDD)
+                  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                  window.open(url, "_blank");
+                }
+              </script>
+              
             
             <!--==================== SPONSORS ====================-->
             <section class="sponsor section">

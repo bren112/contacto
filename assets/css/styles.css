@@ -284,6 +284,38 @@ input {
 .show-menu {
   right: 0;
 }
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  text-align: center;
+  width: 100%;
+  max-width: 900px; /* limite no desktop */
+}
+
+.map-container h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.map-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* proporção 16:9 */
+  height: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; /* opcional: bordas arredondadas */
+}
 
 /* Change background header */
 .scroll-header {
