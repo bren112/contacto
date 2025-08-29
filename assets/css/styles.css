@@ -171,7 +171,6 @@ input {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: center;
-  text-transform: capitalize;
   margin-bottom: var(--mb-2);
 }
 
@@ -353,6 +352,7 @@ input {
 .home__info {
   background-color: var(--first-color);
   display: flex;
+  flex-direction: column;
   padding: 1.5rem 1rem;
   align-items: center;
   column-gap: .5rem;
