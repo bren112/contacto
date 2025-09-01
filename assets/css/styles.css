@@ -230,6 +230,8 @@ input {
 
 .nav__logo {
   font-weight: var(--font-semi-bold);
+  width: 8pc;
+  justify-content: center;
 }
 
 .nav__toggle {
@@ -514,14 +516,24 @@ input {
 .discover__card {
   position: relative;
   width: 200px;
-  overflow: var(--img-hidden);
+  overflow: hidden;
 }
 
 .discover__data {
   position: absolute;
-  bottom: 1.5rem;
-  left: 1rem;
+  bottom: 0;       /* fica grudado embaixo */
+  left: 0;
+  right: 0;
+  width: 100%;     /* garante ocupar toda a largura */
+
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5); /* faixa preta transparente */
 }
+
 
 .discover__title, 
 .discover__description {
@@ -1134,4 +1146,13 @@ input {
     right: 15px;
     font-size: 25px;
     cursor: pointer;
+}
+/* Centraliza a logo só no mobile */
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
 }
