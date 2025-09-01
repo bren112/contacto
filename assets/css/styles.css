@@ -346,7 +346,7 @@ input {
   object-fit: cover;
   object-position: 83%;
 
-  filter: brightness(1.3); /* aumenta o brilho (1 = normal) */
+  filter: brightness(0.9); /* aumenta o brilho (1 = normal) */
 }
 
 
